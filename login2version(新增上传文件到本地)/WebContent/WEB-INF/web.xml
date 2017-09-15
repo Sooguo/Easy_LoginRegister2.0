@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>login2version</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.Guo.servlet.UploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/login2version/UploadServlet</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <servlet-name>UploaderServlet</servlet-name>
+    <servlet-class>com.Guo.servlet.UploaderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploaderCheckServlet</servlet-name>
+    <servlet-class>com.Guo.servlet.UploaderCheckServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>UploaderServlet</servlet-name>
+    <url-pattern>/UploaderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploaderCheckServlet</servlet-name>
+    <url-pattern>/UploaderCheckServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
